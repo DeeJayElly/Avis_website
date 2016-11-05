@@ -33,7 +33,7 @@ Author URI : http://www.markups.io/
 .search-area input[type="submit"] {
   background-color: #2B5C94;  
 }
-.tittle>span{
+.title>span{
   color: #2B5C94;
 }
 .single-wc-content span {
@@ -43,7 +43,7 @@ Author URI : http://www.markups.io/
 .single-wc-content:hover .wc-icon{
   background-color: #2B5C94;
 }
-.single-wc-content:hover .wc-tittle{
+.single-wc-content:hover .wc-title{
   border-bottom: 2px solid #2B5C94;  
 }
 .about-left {

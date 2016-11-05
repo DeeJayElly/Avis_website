@@ -46,7 +46,7 @@ gulp.task('scripts', function() {
 
 /* Sass task */
 gulp.task('sass', function () {  
-    gulp.src('scss/style.scss')
+    gulp.src('assets/scss/style.scss')
     .pipe(plumber())
     .pipe(sass({
         includePaths: require('node-neat').includePaths
@@ -81,9 +81,10 @@ gulp.task('browser-sync', function() {
 /* Watch scss, js and html files, doing different things with each. */
 gulp.task('default', ['sass', 'browser-sync'], function () {
     /* Watch scss, run the sass task on change. */
-    gulp.watch(['scss/*.scss', 'scss/**/*.scss'], ['sass'])
+    gulp.watch(['assets/scss/*.scss', 'assets/scss/**/*.scss', 'assets/css/**/*.css'], ['sass'])
     /* Watch app.js file, run the scripts task on change. */
     gulp.watch(['js/app.js'], ['scripts'])
-    /* Watch .html files, run the bs-reload task on change. */
+    /* Watch .html and .css files, run the bs-reload task on change. */
+    gulp.watch(['*.css'], ['bs-reload']);
     gulp.watch(['*.html'], ['bs-reload']);
 });
