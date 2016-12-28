@@ -7,7 +7,7 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Avis - Agencija za konsalting usluge</title>
     <meta name="author" content="Aleksandar Djordjevic">
-    <meta name="description" content="Avis, avis, agencija avis, agencija konsalting, konsalting usluge, agencija avis konsalting, avis srbija, avis konsalting, avis agencija, avis srbija konsalting, avis beograd, avis svilajnac">
+    <meta name="description" content="Avis, avis, agencija avis, agencija konsalting, biznis, biznis plan, avis biznis, avis plan, biznis plan srbija, biznis plan beograd, konsalting usluge, agencija avis konsalting, avis srbija, avis konsalting, avis agencija, avis srbija konsalting, avis beograd, avis svilajnac">
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/icon" href="assets/images/favicon.ico"/>
     <!-- Font Awesome -->
@@ -19,7 +19,8 @@
     <!-- Fancybox slider -->
     <link rel="stylesheet" href="assets/css/jquery.fancybox.css" type="text/css" media="screen" /> 
     <!-- Animate css -->
-    <link rel="stylesheet" type="text/css" href="assets/css/animate.css"/>  
+    <link rel="stylesheet" type="text/css" href="assets/css/animate.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/htmlfromrss.css"/>    
      <!-- Theme color -->
     <link id="switcher" href="assets/css/theme-color/lite-blue-theme.css" rel="stylesheet">
     <!-- Main Style -->
@@ -62,8 +63,7 @@
         <!-- End header content slider 
          Header btn area -->  
         <div class="header-btn-area">
-          <a class="knowmore-btn" href="#contact">JAVITE NAM SE</a>
-         <!-- <a class="download-btn" href="#">DOWNLOAD Theme</a>-->
+          <a class="knowmore-btn" onclick="$('.navbar-contact-btn').click();">JAVITE NAM SE</a>
         </div>
       </div>
       </div>      
@@ -83,7 +83,7 @@
             <span class="icon-bar"></span>
           </button>
           <!-- LOGO -->                                               
-           <a class="navbar-brand logo" href="index.html"><img src="assets/images/logo.jpg" alt="logo"></a>                  
+           <a class="navbar-brand logo" href="index.html"><img src="assets/images/logo.png" alt="logo"></a>                  
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul id="top-menu" class="nav navbar-nav main-nav menu-scroll">
@@ -94,15 +94,9 @@
             <li><a href="#portfolio">PORTFOLIO</a></li>
             <li><a href="#pricing-table">CENOVNIK</a></li>             
             <li><a href="#from-blog">VESTI</a></li>      
-            <li><a href="#contact">KONTAKT</a></li>
+            <li><a class="navbar-contact-btn" href="#contact">KONTAKT</a></li>
           </ul>                            
-        </div><!--/.nav-collapse -->
-       <div class="search-area">
-          <form action="">
-            <input id="search" name="search" type="text" placeholder="What're you looking for ?">
-            <input id="search_submit" value="Rechercher" type="submit">
-          </form>
-        </div>         
+        </div><!--/.nav-collapse -->      
       </div>          
     </nav> 
   </section>
@@ -116,7 +110,7 @@
             <div class="row">
               <div class="col-md-5 col-sm-6 col-xs-12">
                 <div class="about-left wow fadeInLeft">
-                  <img src="assets/images/about-img.jpg" alt="img">
+                  <img src="assets/images/about-img2.jpg" width="500px" height="375px" alt="About Us Image">
                 </div>
               </div>
               <div class="col-md-7 col-sm-6 col-xs-12">
@@ -124,14 +118,14 @@
                   <div class="title-area">
                     <h2 class="title"><span>O NAMA</span></h2>
                     <span class="title-line"></span>
-                    <p>Aktivnosti agencije Avis 03, organizovane kao klasičan porodičan biznis, usmerene su ka izradi širokog dijapazona investicionih projekata, biznis planova, marketing planova i ostalih usluga iz domena poslovnog konsaltinga. Zahvaljujući bogatom, dugogodišnjem iskustvu, kao i izuzetno stručnom kadru najvišeg profila uspešno ostvarujemo navedene projekte. Politika Agencije je pružanje poslovnih usluga. Naš stručni tim može u svakom trenutku da profesionalno odgovori  na pitanja svojih klijenata, pruži im neophodne informacije i savete. Jer, zadovoljan klijent predstavlja uspeh naše Agencije. Snaga kadrovskog potencijala Agencije je spoj iskustva i mladih stručnjaka, koji konstantno prate trendove modernog finansijskog poslovanja.</p>
+                    <p>Aktivnosti agencije Avis 03, organizovane kao klasičan porodičan biznis, usmerene su ka izradi širokog dijapazona investicionih projekata, biznis planova, marketing planova i ostalih usluga iz domena poslovnog konsaltinga. Zahvaljujući bogatom, dugogodišnjem iskustvu, kao i izuzetno stručnom kadru najvišeg profila uspešno ostvarujemo navedene projekte. Politika Agencije je pružanje najkvalitetnijih poslovnih usluga. Naš stručni tim može u svakom trenutku da profesionalno odgovori  na pitanja svojih klijenata, pruži im neophodne informacije i savete. Jer, zadovoljan klijent predstavlja uspeh naše Agencije. Snaga kadrovskog potencijala Agencije je spoj iskustva i mladih stručnjaka, koji konstantno prate trendove modernog finansijskog poslovanja.</p>
                     <h3 style="text-align: center;"><strong>Vaša je ideja, sve ostalo prepustite nama.</strong></h3>
                     <h3>MISIJA</h3>
                     <p>Misija agencije Avis 03 je konstantno usavršavanje sopstvenih kompetencija radi što kvalitetnijeg pružanja usluga iz oblasti finansijskog, poslovnog i investicionog konsaltinga u cilju dugoročnog unapređenja poslovanja klijenata.</p>
                     <h3>VIZIJA</h3>
                     <p>Naša vizija je da u predstojećem  periodu  postanemo lideri u regionu u sferi konsaltinga zadovoljavanjem poslovnih potreba svojih klijenata obezbeđujući im vrhunsku uslugu, u skladu sa etičkim principima poslovanja.</p> 
                     <div class="about-btn-area">
-                      <a href="#service" class="button button-default" data-text="SAZNAJTE VIŠE"><span>SAZNAJTE VIŠE</span></a>
+                     <!-- <a href="#service" class="button button-default" data-text="SAZNAJTE VIŠE"><span>SAZNAJTE VIŠE</span></a> -->
                     </div>                    
                   </div>
                 </div>
@@ -161,7 +155,7 @@
                   <div class="team-item team-img-1 wow fadeInUp">
                     <div class="team-info">
                       <p>Vlasnik i direktor</p>
-                      <p>Diplomirani ekonomista i magistar pravnih nauka</p>
+                      <p>Diplomirani ekonomista</p>
                       <a href="#"><span class="fa fa-file-text"></span></a>
                       <a href="#"><span class="fa fa-linkedin"></span></a>
                     </div>
@@ -230,7 +224,7 @@
             <div class="title-area">
               <h2 class="title"><span>DELATNOST</span></h2>
               <span class="title-line"></span>
-              <p>Servisi i delatnosti koje nase agencija nudi</p>
+              <p>Usluge Agencije</p>
             </div>
             <!-- service content -->
             <div class="service-content">
@@ -310,140 +304,142 @@
         <div class="col-md-12">
           <div class="portfolio-area">
             <div class="title-area">
-              <h2 class="title"><span>PORTFOLIO</span></h2>
+              <h2 class="title"><span>REFERENCE</span></h2>
               <span class="title-line"></span>
-              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto</p>
+              <p>Dugogodišnje poslovanje koje je rezultiralo uspešnom izradom više stotina projekata iz svih oblasti privrednog stvaralaštva, sa prostora čitave Republike Srbije.</p>
             </div>
             <!-- Portfolio content -->
             <div class="portfolio-content">
                 <!-- portfolio menu -->
                <div class="portfolio-menu">
                  <ul>
-                   <li class="filter" data-filter="all">All</li>
-                   <li class="filter" data-filter=".branding">Branding</li>
-                   <li class="filter" data-filter=".design">Design</li>
-                   <li class="filter" data-filter=".development">Development</li>
-                   <li class="filter" data-filter=".photography">Photography</li>
+                   <li class="filter" data-filter="all">Sve</li>
+                   <li class="filter" data-filter=".business">BIZNIS PLAN</li>
+                   <li class="filter" data-filter=".consolidation">POSLOVNA KONSOLIDACIJA</li>
+                   <li class="filter" data-filter=".companies">REGISTRACIJA, PROMENE I GAŠENJE FIRMI</li>
+                   <li class="filter" data-filter=".consalting">KONSALTING</li>
+                   <li class="filter" data-filter=".marketing">MARKETING PLAN</li>
+                   <li class="filter" data-filter=".capital">PROCENA VREDNOSTI KAPITALA</li>
                  </ul>
                </div>
                <!-- Portfolio container -->
                <div id="mixit-container" class="portfolio-container">
-                 <div class="single-portfolio mix branding">
+                 <div class="single-portfolio mix business">
                    <div class="single-item">
-                     <img src="assets/images/portfolio-img-small1.jpg" alt="img">
+                     <img src="assets/images/business-plan.jpg" alt="img">
                      <div class="single-item-content">
                         <div class="portfolio-social-icon">
-                          <a class="fancybox" data-fancybox-group="gallery" href="assets/images/portfolio-img-big1.jpg"><i class="fa fa-eye"></i></a>
+                          <a class="fancybox" data-fancybox-group="gallery" href="assets/images/business-plan.jpg"><i class="fa fa-eye"></i></a>
                           <a class="link-btn" href="#"><i class="fa fa-link"></i></a>
                         </div>
                         <div class="portfolio-title">
-                          <h4>Mobile application</h4>
-                          <span>UI Design</span>
+                          <h4>Projekat 1</h4>
+                          <span>Test 1</span>
                         </div>
                      </div>
                    </div>
                  </div>
-                 <div class="single-portfolio mix design">
+                 <div class="single-portfolio mix consolidation">
                    <div class="single-item">
-                     <img src="assets/images/portfolio-img-small2.jpg" alt="img">
+                     <img src="assets/images/corporate-company.jpg" alt="img">
                      <div class="single-item-content">
                         <div class="portfolio-social-icon">
-                          <a class="fancybox" data-fancybox-group="gallery" href="assets/images/portfolio-img-big2.jpg"><i class="fa fa-eye"></i></a>
+                          <a class="fancybox" data-fancybox-group="gallery" href="assets/images/corporate-company.jpg"><i class="fa fa-eye"></i></a>
                           <a class="link-btn" href="#"><i class="fa fa-link"></i></a>
                         </div>
                         <div class="portfolio-title">
-                          <h4>Mobile application</h4>
-                          <span>UI Design</span>
+                          <h4>Projekat 2</h4>
+                          <span>Test 2</span>
                         </div>
                      </div>
                    </div>
                  </div>
-                 <div class="single-portfolio mix development">
+                 <div class="single-portfolio mix companies">
                    <div class="single-item">
-                     <img src="assets/images/portfolio-img-small3.jpg" alt="img">
+                     <img src="assets/images/start_up.jpg" alt="img">
                      <div class="single-item-content">
                         <div class="portfolio-social-icon">
-                          <a class="fancybox" data-fancybox-group="gallery" href="assets/images/portfolio-img-big3.jpg"><i class="fa fa-eye"></i></a>
+                          <a class="fancybox" data-fancybox-group="gallery" href="assets/images/start_up.jpg"><i class="fa fa-eye"></i></a>
                           <a class="link-btn" href="#"><i class="fa fa-link"></i></a>
                         </div>
                         <div class="portfolio-title">
-                          <h4>Mobile application</h4>
-                          <span>UI Design</span>
+                          <h4>Projekat 3</h4>
+                          <span>Test 3</span>
                         </div>
                      </div>
                    </div>
                  </div>
-                 <div class="single-portfolio mix photography">
+                 <div class="single-portfolio mix consalting">
                    <div class="single-item">
-                     <img src="assets/images/portfolio-img-small4.jpg" alt="img">
+                     <img src="assets/images/consalting.jpg" alt="img">
                      <div class="single-item-content">
                         <div class="portfolio-social-icon">
-                          <a class="fancybox" data-fancybox-group="gallery" href="assets/images/portfolio-img-big4.jpg"><i class="fa fa-eye"></i></a>
+                          <a class="fancybox" data-fancybox-group="gallery" href="assets/images/consalting.jpg"><i class="fa fa-eye"></i></a>
                           <a class="link-btn" href="#"><i class="fa fa-link"></i></a>
                         </div>
                         <div class="portfolio-title">
-                          <h4>Mobile application</h4>
-                          <span>UI Design</span>
+                          <h4>Projekat 4</h4>
+                          <span>Test 4</span>
                         </div>
                      </div>
                    </div>
                  </div>
-                 <div class="single-portfolio mix photography">
+                 <div class="single-portfolio mix marketing">
                    <div class="single-item">
-                     <img src="assets/images/portfolio-img-small5.jpg" alt="img">
+                     <img src="assets/images/marketing-planning.jpg" alt="img">
                      <div class="single-item-content">
                         <div class="portfolio-social-icon">
-                          <a class="fancybox" data-fancybox-group="gallery" href="assets/images/portfolio-img-big5.jpg"><i class="fa fa-eye"></i></a>
+                          <a class="fancybox" data-fancybox-group="gallery" href="assets/images/marketing-planning.jpg"><i class="fa fa-eye"></i></a>
                           <a class="link-btn" href="#"><i class="fa fa-link"></i></a>
                         </div>
                         <div class="portfolio-title">
-                          <h4>Mobile application</h4>
-                          <span>UI Design</span>
+                          <h4>Projekat 5</h4>
+                          <span>Test 5</span>
                         </div>
                      </div>
                    </div>
                  </div>
-                 <div class="single-portfolio mix photography">
+                 <div class="single-portfolio mix">
                    <div class="single-item">
-                     <img src="assets/images/portfolio-img-small6.jpg" alt="img">
+                     <img src="assets/images/marketing-planning.jpg" alt="img">
                      <div class="single-item-content">
                         <div class="portfolio-social-icon">
-                          <a class="fancybox" data-fancybox-group="gallery" href="assets/images/portfolio-img-big6.jpg"><i class="fa fa-eye"></i></a>
+                          <a class="fancybox" data-fancybox-group="gallery" href="assets/images/marketing-planning.jpg"><i class="fa fa-eye"></i></a>
                           <a class="link-btn" href="#"><i class="fa fa-link"></i></a>
                         </div>
                         <div class="portfolio-title">
-                          <h4>Mobile application</h4>
-                          <span>UI Design</span>
+                          <h4>Projekat 6</h4>
+                          <span>Test 6</span>
                         </div>
                      </div>
                    </div>
                  </div>
-                 <div class="single-portfolio mix photography">
+                 <div class="single-portfolio mix capital">
                    <div class="single-item">
-                     <img src="assets/images/portfolio-img-small7.jpg" alt="img">
+                     <img src="assets/images/projectduenew.jpg" alt="img">
                      <div class="single-item-content">
                         <div class="portfolio-social-icon">
-                          <a class="fancybox" data-fancybox-group="gallery" href="assets/images/portfolio-img-big7.jpg"><i class="fa fa-eye"></i></a>
+                          <a class="fancybox" data-fancybox-group="gallery" href="assets/images/projectduenew.jpg"><i class="fa fa-eye"></i></a>
                           <a class="link-btn" href="#"><i class="fa fa-link"></i></a>
                         </div>
                         <div class="portfolio-title">
-                          <h4>Mobile application</h4>
-                          <span>UI Design</span>
+                          <h4>Projekat 7</h4>
+                          <span>Test 7</span>
                         </div>
                      </div>
                    </div>
                  </div>
-                 <div class="single-portfolio mix photography">
+                 <div class="single-portfolio mix">
                    <div class="single-item">
-                     <img src="assets/images/portfolio-img-small2.jpg" alt="img">
+                     <img src="assets/images/projectduenew.jpg" alt="img">
                      <div class="single-item-content">
                         <div class="portfolio-social-icon">
-                          <a class="fancybox" data-fancybox-group="gallery" href="assets/images/portfolio-img-big2.jpg"><i class="fa fa-eye"></i></a>
+                          <a class="fancybox" data-fancybox-group="gallery" href="assets/images/projectduenew.jpg"><i class="fa fa-eye"></i></a>
                           <a class="link-btn" href="#"><i class="fa fa-link"></i></a>
                         </div>
                         <div class="portfolio-title">
-                          <h4>Mobile application</h4>
-                          <span>UI Design</span>
+                          <h4>Projekat 8</h4>
+                          <span>Test 8</span>
                         </div>
                      </div>
                    </div>
@@ -463,63 +459,16 @@
         <div class="col-md-12">
           <div class="pricing-table-area">
             <div class="title-area">
-              <h2 class="title">CENA</h2>
+              <h2 class="title">CENOVNIK</h2>
               <span class="title-line"></span>
-              <p>unde omnis iste natus error sit voluptatem accusantium doloremque laudantium  aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto</p>
+              <p>Pogledajte naš cenovnik usluga</p>
             </div>
             <!-- service content -->
             <div class="pricing-table-content">
                 <ul class="price-table">
                   <li class="wow slideInUp">
-                    <div class="single-price">
-                      <h4 class="price-header">Basic</h4>
-                      <span class="price-amount">$0.00/mo</span>
-                      <p>5GB Storage</p>
-                      <p>1GB RAM</p>
-                      <p>400GB Bandwidth</p>
-                      <p>10 Email Address</p>
-                      <p>Unlimited access</p>
-                      <p>Forum Support</p>
-                      <a data-text="SIGN UP" class="button button-default" href="#"><span>SIGN UP</span></a>
-                    </div>
-                  </li>
-                  <li class="wow slideInUp">
                     <div class="single-price standard-price">
-                      <h4 class="price-header">Standard</h4>
-                      <span class="price-amount">$10.00/mo</span>
-                      <p>5GB Storage</p>
-                      <p>1GB RAM</p>
-                      <p>400GB Bandwidth</p>
-                      <p>10 Email Address</p>
-                      <p>Unlimited access</p>
-                      <p>Forum Support</p>
-                      <a data-text="SIGN UP" class="button button-default" href="#"><span>SIGN UP</span></a>
-                    </div>
-                  </li>
-                  <li class="wow slideInUp">
-                    <div class="single-price">
-                      <h4 class="price-header">Advance</h4>
-                      <span class="price-amount">$19.00/mo</span>
-                      <p>5GB Storage</p>
-                      <p>1GB RAM</p>
-                      <p>400GB Bandwidth</p>
-                      <p>10 Email Address</p>
-                      <p>Unlimited access</p>
-                      <p>Forum Support</p>
-                      <a data-text="SIGN UP" class="button button-default" href="#"><span>SIGN UP</span></a>
-                    </div>
-                  </li>
-                  <li class="wow slideInUp">
-                    <div class="single-price">
-                      <h4 class="price-header">Mighty</h4>
-                      <span class="price-amount">$39.00/mo</span>
-                      <p>5GB Storage</p>
-                      <p>1GB RAM</p>
-                      <p>400GB Bandwidth</p>
-                      <p>10 Email Address</p>
-                      <p>Unlimited access</p>
-                      <p>Forum Support</p>
-                      <a data-text="SIGN UP" class="button button-default" href="#"><span>SIGN UP</span></a>
+                      <a data-text="CENOVNIK" class="button button-default" href="Cenovnik_usluga_AVIS.pdf" target="_blank"><span>CENOVNIK</span></a>
                     </div>
                   </li>
                </ul>     
@@ -540,7 +489,7 @@
             <!-- Start Testimonial area -->
             <div class="testimonial-area">
               <div class="title-area">
-                <h2 class="title">What people say about us</h2>
+                <h2 class="title">Naši klijenti o nama</h2>
                 <span class="title-line"></span>              
               </div>
               <div class="testimonial-conten">
@@ -548,22 +497,46 @@
                 <div class="testimonial-slider">
                   <!-- single slide -->
                   <div class="single-slide">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamcoquat. Duis aute irure d olor in reprehenderit</p>
+                    <p>Rad sa Agencijom AVIS 03 je uvek zadovoljstvo. U potpunosti su ispunili naša očekivanja po pitanju svih konsultantskih usluga prethodnih godina.</p>
                     <div class="single-testimonial">
-                      <img class="testimonial-thumb" src="assets/images/testimonial-image1.png" alt="img">
-                      <p>Jonna Hike</p>
-                      <span>CEO, Themeforest</span>
+                      <img class="testimonial-thumb" src="assets/images/nesa.jpg" alt="img">
+                      <p>Miroljub Ognjanović</p>
+                      <span>Neša Komerc d.o.o., Svilajnac</span>
                     </div>
                   </div>
                   <!-- single slide -->
                   <div class="single-slide">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamcoquat. Duis aute irure d olor in reprehenderit</p>
+                    <p>Tim AVIS 03, sa gospodinom Arsićem na čelu je uspešno za našu kompaniju prikupio kapital u vrednosti od 2.500.000 eura.</p>
                     <div class="single-testimonial">
-                      <img class="testimonial-thumb" src="assets/images/team-member2.png" alt="img">
-                      <p>Jonna Hike</p>
-                      <span>CEO, Themeforest</span>
+                      <img class="testimonial-thumb" src="assets/images/fili.png" alt="img">
+                      <p>Zoran Milosavljević</p>
+                      <span>Fili d.o.o., Svilajnac</span>
                     </div>
                   </div>
+                  <div class="single-slide">
+                    <p>Nakon sprovedenog konsultanstkog projekta poboljšavanja poslovanja naše kompanije u trajanju od četiri meseca, naša kompanija je zaista poboljšala poslovne performanse i uvećala poslovnu aktivnost.</p>
+                    <div class="single-testimonial">
+                      <img class="testimonial-thumb" src="assets/images/cocoriko.jpg" alt="img">
+                      <p>Miloš Jovanović</p>
+                      <span>Coco-Riko d.o.o., Svilajnac</span>
+                    </div>
+                  </div>
+                  <div class="single-slide">
+                    <p>Poslovna konsolidacija koja je sprovedena od strane AVIS 03 je preokrenula poslovanje naše komapnije i obezbedila je održiv rast i razvoj.</p>
+                    <div class="single-testimonial">
+                      <img class="testimonial-thumb" src="assets/images/hotelsumadija.png" alt="img">
+                      <p>Njegomir Kilibarda</p>
+                      <span>Hotel Šumadija d.o.o., Beograd</span>
+                    </div>
+                  </div>
+                  <div class="single-slide">
+                    <p>Prema dogovoru, gospodin Arsić je sa svojim timom obezbedio kapital za našu investiciju.</p>
+                    <div class="single-testimonial">
+                      <img class="testimonial-thumb" src="assets/images/forestfood.png" alt="img">
+                      <p>Danijel Cirković</p>
+                      <span>Forest food d.o.o., Kruševac</span>
+                    </div>
+                  </div>    
                 </div>
               </div>
             </div>
@@ -582,57 +555,33 @@
             <div class="title-area">
               <h2 class="title">Vesti</h2>
               <span class="title-line"></span>
-              <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est</p>
+              <p>Biznis vesti u regiji i širom sveta.</p>
             </div>
             <!-- From Blog content -->
             <div class="from-blog-content">
               <div class="row">
                 <div class="col-md-4">
                   <article class="single-from-blog">
-                    <figure>
-                      <a href="blog-single.html"><img src="assets/images/the-sky.jpg" alt="img"></a>
-                    </figure>
                     <div class="blog-title">
-                      <h2><a href="blog-single.html">Here is the post title</a></h2>
-                      <p>Posted by <a class="blog-admin" href="#">admin</a> on <span class="blog-date">23rd july 2015</span></p>
+                      <h2><a href="blog-single.html">B92 biznis vesti</a></h2>
                     </div>
-                    <p>Sed ut perspiciatis unde mnis is te natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis </p>
-                    <div class="blog-footer">
-                      <a href="#"><span class="fa fa-comment"></span>18 Comments</a>
-                      <a href="#"><span class="fa fa-thumbs-o-up"></span>35 Likes</a>
-                    </div>
+                    <div class="rssnews" data-htmlfromrss="http://www.b92.net/info/rss/biz.xml"></div>
                   </article>
                 </div>
                 <div class="col-md-4">
                   <article class="single-from-blog">
-                    <figure>
-                      <a href="blog-single.html"><img src="assets/images/photographer.jpg" alt="img"></a>
-                    </figure>
                     <div class="blog-title">
-                      <h2><a href="blog-single.html">Here is the post title</a></h2>
-                      <p>Posted by <a class="blog-admin" href="#">admin</a> on <span class="blog-date">23rd july 2015</span></p>
+                      <h2><a href="blog-single.html">Blic ekonomske vesti</a></h2>
                     </div>
-                    <p>Sed ut perspiciatis unde mnis is te natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis </p>
-                    <div class="blog-footer">
-                      <a href="#"><span class="fa fa-comment"></span>18 Comments</a>
-                      <a href="#"><span class="fa fa-thumbs-o-up"></span>35 Likes</a>
-                    </div>
+                    <div class="rssnews" data-htmlfromrss="http://www.blic.rs/rss/Vesti/Ekonomija"></div>
                   </article>
                 </div>
                 <div class="col-md-4">
                   <article class="single-from-blog">
-                    <figure>
-                      <a href="blog-single.html"><img src="assets/images/sealand.jpg" alt="img"></a>
-                    </figure>
                     <div class="blog-title">
-                      <h2><a href="blog-single.html">Here is the post title</a></h2>
-                      <p>Posted by <a class="blog-admin" href="#">admin</a> on <span class="blog-date">23rd july 2015</span></p>
+                      <h2><a href="blog-single.html">BBC biznis vesti</a></h2>
                     </div>
-                    <p>Sed ut perspiciatis unde mnis is te natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis </p>
-                    <div class="blog-footer">
-                      <a href="#"><span class="fa fa-comment"></span>18 Comments</a>
-                      <a href="#"><span class="fa fa-thumbs-o-up"></span>35 Likes</a>
-                    </div>
+                    <div class="rssnews" data-htmlfromrss="http://feeds.bbci.co.uk/news/business/rss.xml"></div>
                   </article>
                 </div>
               </div>    
@@ -649,41 +598,44 @@
       <div class="row">
         <div class="col-md-4 col-sm-6 col-xs-12">
           <div class="contact-left wow fadeInLeft">
-            <h2>Contact with us</h2>
+            <h2>KONTAKT</h2>
             <address class="single-address">
-              <h4>Postal address:</h4>
-              <p>PO Box 16122 Collins Street West Victoria 8007 Australia</p>
+              <h4>Adresa 1:</h4>
+              <p>Karađorđeva 1</p> 
+              <p>35210 Svilajnac, Srbija</p>
             </address>
              <address class="single-address">
-              <h4>Headquarters:</h4>
-              <p>121 King Street, Melbourne Victoria 3000 Australia</p>
+              <h4>Adresa 2:</h4>
+              <p>Stevana Đurđevića Trošarinca 3/3</p>
+              <p>11030 Beograd, Srbija</p>
             </address>
              <address class="single-address">
-              <h4>Phone</h4>
-              <p>Phone Number: (123) 456 7890</p>
-              <p>Fax Number: (123) 456 7890</p>
+              <h4>Telefon:</h4>
+              <p>+381(0)35 325-431</p>
+              <p>+381(0)11 354-7990</p>
+              <p>+381(0)63 806-2358</p>
+              <p>+381(0)61 712-0535</p>
             </address>
              <address class="single-address">
               <h4>E-Mail</h4>
-              <p>Support: Support@example.com</p>
-              <p>Sales: sales@example.com</p>
+              <p>office@biznisplanavis.rs</p>
             </address>
           </div>
         </div>
         <div class="col-md-8 col-sm-6 col-xs-12">
           <div class="contact-right wow fadeInRight">
-            <h2>Send a message</h2>
-            <form action="" class="contact-form">
+            <h2>POŠALJITE NAM DIREKTNU PORUKU</h2>
+            <form action="mail.php" method="post" class="contact-form">
               <div class="form-group">                
-                <input type="text" class="form-control" placeholder="Name">
+                <input type="text" class="form-control" id="name" name="name" placeholder="Name">
               </div>
               <div class="form-group">                
-                <input type="email" class="form-control" placeholder="Enter Email">
+                <input type="email" class="form-control" id="email" name="email" placeholder="Enter Email">
               </div>              
               <div class="form-group">
-                <textarea class="form-control"></textarea>
+                <textarea class="form-control" id="message" name="message"></textarea>
               </div>
-              <button type="submit" data-text="SUBMIT" class="button button-default"><span>SUBMIT</span></button>
+              <button type="submit" id="submit" name="submit" data-text="Pošalji" class="button button-default"><span>Pošalji</span></button>
             </form>
           </div>
         </div>
@@ -693,7 +645,9 @@
   <!-- End Contact section -->
   <!-- Start Google Map -->
   <section id="google-map">
+   <div class='embed-container maps'>
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1716.320048502431!2d21.19747710336303!3d44.230959427010525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xfeb542da2cd1a1c9!2sAvis+-+Agencija+za+konsalting+usluge!5e0!3m2!1sen!2s!4v1475443793167" width="100%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
+   </div>       
   </section>
   <!-- End Google Map -->
   <!-- Start Footer -->    
@@ -702,8 +656,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <div class="footer-top-area">             
-                <a class="footer-logo" href="#"><img src="assets/images/logo.jpg" alt="Logo"></a>              
+            <div class="footer-top-area">                         
                 <div class="footer-social">
                 <a class="facebook" href="#"><span class="fa fa-facebook"></span></a>
                 <a class="twitter" href="#"><span class="fa fa-twitter"></span></a>
@@ -739,5 +692,6 @@
   <script type="text/javascript" src="assets/js/wow.js"></script> 
   <!-- Custom js -->
   <script type="text/javascript" src="assets/js/custom.js"></script>
+  <script type="text/javascript" src="assets/js/htmlfromrss.js"></script>
   </body>
 </html>

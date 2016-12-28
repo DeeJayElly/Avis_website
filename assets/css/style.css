@@ -202,6 +202,7 @@ img{
 	font-size: 80px;
 	font-weight: bold;
 	text-transform: uppercase;
+    text-shadow: 4px 2px 5px rgba(0, 0, 0, 1);
 	line-height: 110px;
 }
 .header-content h2 span {
@@ -289,17 +290,18 @@ img{
 .logo {
 	height: 100px;  
 	width: 85px;
-	margin-right: 45px;
+	margin-right: 90px;
+    margin-left: -45px !important;
 	margin-top: -1px;
-	padding: 0;
+	padding: 15px;
 }
 .logo-compressed {
 	height: 80px;  
 	width: 70px;
 }
 .logo img {
-	height: 100%;
-	width: 100%;
+    height: 65px;
+    width: auto;
 }
 #navbar {
 	float: left;
@@ -987,6 +989,7 @@ img{
 	width: 100%;
     display: block;
     height: 290px;
+    object-fit: contain;
     -webkit-transition: all 0.5s ease 0s;
 	-o-transition: all 0.5s ease 0s;
 	transition: all 0.5s ease 0s;
@@ -996,6 +999,16 @@ img{
 	    -ms-transform: scale(1);	
 	        transform: scale(1);	       
 }
+
+.htmlfromrss .title {
+    font-size: 30px;
+}
+
+.htmlfromrss li .title a {
+    font-size: 0.6em;
+    line-height: 0.5;
+}
+
 #mixit-container .mix{
     display: none;
 }
@@ -1152,8 +1165,8 @@ img{
 	width: 100%;
 }
 .pricing-table-content {
-	display: inline;
-	float: left;
+	display: flex;
+    align-content: center;
 	margin-top: 60px;
 	width: 100%;
 }
@@ -1167,7 +1180,6 @@ img{
   border-left: 1px solid #e4e4e4;
   border-top: 1px solid #e4e4e4;
   display: inline-block;
-  float: left;
   padding-bottom: 12px;
   width: 25%;
 }
@@ -1204,9 +1216,6 @@ img{
 	font-weight: 600;
 	padding: 10px 0;
 	text-align: center;
-}
-.standard-price{
-	margin-top: -20px;
 }
 .standard-price .price-header{
 	padding: 30px 0px;
@@ -1576,6 +1585,9 @@ img{
 	float: left;	
 	width: 100%;
 }
+.maps iframe{
+    pointer-events: none;
+}
 
 /*--------------------*/
 /* FOOTER */
@@ -1667,6 +1679,10 @@ img{
 	color: #fff;
 	font-size: 18px;
 	margin-bottom: 0px;
+}
+
+.footer-bottom a{
+	color: #2B5C94;    
 }
 
 
@@ -2161,7 +2177,7 @@ img{
 	.header-btn-area {
 	  margin-top: 65px;  
 	}
-	.logo {
+	.logo { 
 	  margin-right: 0;	  
 	}
 	#navbar {
@@ -2252,11 +2268,14 @@ img{
 	  padding: 18px 20px;	  
 	}
 	.header-btn-area {
-	  margin-top: 20px;
+      margin-top: -20px;
 	}
 	#navbar {
 	  width: 86%;
 	}
+    .logo {
+      margin-left: -10px !important;    
+    }
 	.search-area {
 	  width: 3%;
 	}
@@ -2411,7 +2430,7 @@ img{
 	}
 	.navbar-default .navbar-toggle {
 	  border-color: #ddd;
-	  margin-right: 78px;
+      margin-right: 10px;
 	  margin-top: 32px;
 	  border-radius: 0;
 	}
@@ -2525,8 +2544,6 @@ img{
 	  font-size: 20px;
 	  padding: 0 45px;
 	}
-
-
 }
 
 @media(max-width:480px ){
@@ -2698,7 +2715,7 @@ img{
 	  line-height: 35px;
 	}
 	.header-btn-area {
-	  margin-top: 00px;
+	  margin-top: 0px;
 	}
 
 	.header-btn-area a {

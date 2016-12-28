@@ -4,6 +4,7 @@ Author URI : http://www.markups.io/
 ========================================*/
 .header-content h2 span {
   color: #2B5C94;
+  text-shadow: 4px 2px 5px rgba(0, 0, 0, 1);
 }
 .knowmore-btn:hover,
 .knowmore-btn:focus,
